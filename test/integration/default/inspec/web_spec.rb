@@ -1,3 +1,3 @@
 describe apache_conf do
-  its('Timeout') { should eq ['300'] }
+  its('Listen') { should include('80') }
 end
