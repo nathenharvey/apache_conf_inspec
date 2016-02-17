@@ -1,0 +1,7 @@
+name 'apahce'
+maintainer 'The Authors'
+maintainer_email 'you@example.com'
+license 'all_rights'
+description 'Installs/Configures apahce'
+long_description 'Installs/Configures apahce'
+version '0.1.0'
