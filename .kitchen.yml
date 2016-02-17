@@ -16,5 +16,5 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[apahce::default]
+      - recipe[apache::default]
     attributes:
