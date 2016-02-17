@@ -4,6 +4,14 @@
 #
 # Copyright (c) 2016 The Authors, All Rights Reserved.
 
-execute 'apt-get update'
+if node['platform'] == 'ubuntu'
+  execute 'apt-get update'
 
-package 'apache2'
+  apache_package = 'apache2'
+else
+  apache_package = 'httpd'
+end
+
+package apache_package do
+  action :install
+end
